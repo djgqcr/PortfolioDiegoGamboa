@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Diego Gamboa</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/76b14e7f8b.js" crossorigin="anonymous"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
@@ -18,24 +17,26 @@
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/profile.css" />
     <link rel="stylesheet" href="css/skills.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/service.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+    <link rel="stylesheet" href="css/grid-gallery.css" />
     <link rel="stylesheet" href="Icon/style.css">
     <script defer src="js/app.js"></script>
 
   </head>
   <body>
+<!--HEADER-->    
     <header class="topheader">
       <nav class="topnav">
         <a href="#" class="logo">
-          <img
+          <!-- <img
             height="50"
             width="50"
             src="img/djgq.jpeg"
             alt="programador"
-          />
+          /> -->
           <div class="logotype">
-            Diego Gamboa<br />
-            { code }
+            Diego Gamboa
           </div>
         </a>
         <button class="open-menu" aria-label="Abrir menú">
@@ -56,10 +57,19 @@
     </header>
 
     <main>
+<!--PROFILE-->
     <div class="horizontal-padding vertical-padding">
       <section class="profile">
         <div class="profile-info">
-          <h1 class="profile-title">Hola, soy <br />Diego Gamboa</h1>
+          <a href="#" class="logo-profile">
+            <img
+              height="50"
+              width="50"
+              src="img/djgq.jpeg"
+              alt="programador"
+            />
+          </a>
+          <h1 class="profile-title">Hello, I'm  <br><span class="name-title"> Diego Gamboa</span></h1>   
           <p class="profile-details">
             Soy un apasionado por la programación y desarrollo de software, con
             conocimientos en varios lenguajes de programación y
@@ -68,34 +78,35 @@
           <button class="profile-btn">Descargar cv</button>
         </div>
         <span class="profile-img-section">
-          <img
-            class="profile-img"
-            src="img/djgq.jpeg"
-            alt="programador"
-          />
+          
           <div class="profile-img-line"></div>
         </span>
       </section>
     </div>
-
+<!--SKILLS-->
     <div class="horizontal-padding vertical-padding">
       <section class="skills">
-        <h2 class="skills-title">Habilidades</h2>
+        <h2 class="skills-title">Skills</h2>
         <ul class="skills-list">
-          <li class="skills-skill">CSS</li>
-          <li class="skills-skill">HTML</li>
-          <li class="skills-skill">C#</li>
-          <li class="skills-skill">React.js</li>
-          <li class="skills-skill">Github</li>
-          <li class="skills-skill">JavaScript</li>
+          <li class="skills-skill"><i class="fab fa-css3-alt"></i></li>
+          <li class="skills-skill"><i class="fa fa-html5"></i></li>
+          <li class="skills-skill"><i class="fa fa-camera" aria-hidden="true"></i></li>
+          <li class="skills-skill"><i class="fas fa-photo-video"></i></li>
+          <li class="skills-skill"><i class="fa fa-github" aria-hidden="true"></i></li>
+          <li class="skills-skill"><i class="fab fa-js-square"></i></li>
+          <span class="material-icons-outlined">
+            
+            </span>
         </ul>
       </section>
     </div>
-
-    <div class="content2">
-      <h2 class="content2-title">Mis Servicios</h2>
-      <hr>
-      <div class="content-details">
+<!--SERVICES--> 
+  <section class="services">
+    <div class="horizontal-padding vertical-padding">
+      <div class="content2">
+        <h2 class="content2-title">Conocimientos</h2>
+        <hr>
+        <div class="content-details">
           <div class="item-details">
               <div class="icon-details">
                   <span class="lnr lnr-highlight"></span>
@@ -108,7 +119,7 @@
               <div class="icon-details">
                   <span class="lnr lnr-file-empty"></span>
               </div>
-              <h4>Desarrollo</h4>
+              <h4>Desarrollo WEB</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, facilis.</p>
           </div>
           
@@ -119,11 +130,171 @@
               <h4>Base de datos</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, facilis.</p>
           </div>
-          
+        </div>
+        <div class="button-service">Learn More</div>
       </div>
-      
-      <div class="button-leer">Learn More</div>
+    </div> 
+</section>
+
+<div class="horizontal-padding vertical-padding">
+    <div class="product-container"> <!--container-->
+      <section>
+        <h2 class="product-title">Portfolio</h2>
+        <div class="product-portfolio"> <!--gridportfolio-->
+            <!--1-->
+            <div class="product">
+                <a href="#" class="">
+                    <img class="product__image" src="img/portfolio/galeriafotos.png" alt="Imagen producto">
+                    <div class="product__info">
+                      <p class="product__name">Galeria de Fotos</p>
+                        <section class="skills">
+                          <ul class="skills-list">
+                            <li class="skills-skill">CSS</li>
+                            <li class="skills-skill">HTML</li>
+                            <li class="skills-skill">JavaScript</li>
+                          </ul>
+                        </section>
+                    </div>
+                </a>
+            </div><!--Product-->
+
+            <!--2-->
+            <div class="product">
+              <a href="#" class="">
+                  <img class="product__image" src="img/portfolio/tiendaropa.png" alt="Imagen producto">
+                  <div class="product__info">
+                    <p class="product__name">Tienda de ropa</p>
+                      <section class="skills">
+                        <ul class="skills-list">
+                          <li class="skills-skill">CSS</li>
+                          <li class="skills-skill">HTML</li>
+                          <!-- <li class="skills-skill">JavaScript</li> -->
+                        </ul>
+                      </section>
+                  </div>
+              </a>
+          </div><!--Product-->
+
+             <!--3-->
+             <div class="product">
+              <a href="#" class="">
+                  <img class="product__image" src="img/portfolio/tiendaropa.png" alt="Imagen producto">
+                  <div class="product__info">
+                    <p class="product__name">Tienda de ropa</p>
+                      <section class="skills">
+                        <ul class="skills-list">
+                          <li class="skills-skill">CSS</li>
+                          <li class="skills-skill">HTML</li>
+                          <li class="skills-skill">JavaScript</li>
+                        </ul>
+                      </section>
+                  </div>
+              </a>
+          </div><!--Product-->
+
+            <!--4-->
+            <div class="product">
+              <a href="#" class="">
+                  <img class="product__image" src="img/portfolio/galeriafotos.png" alt="Imagen producto">
+                  <div class="product__info">
+                    <p class="product__name">Galeria de Fotos</p>
+                      <section class="skills">
+                        <ul class="skills-list">
+                          <li class="skills-skill">CSS</li>
+                          <li class="skills-skill">HTML</li>
+                          <li class="skills-skill">JavaScript</li>
+                        </ul>
+                      </section>
+                  </div>
+              </a>
+          </div><!--Product-->
+<!-- 
+          5
+            <div class="product">
+                <a href="#" class="">
+                    <img class="product__image" src="img/one.svg" alt="Imagen producto">
+                    <div class="product__info">
+                            <p class="product__name">Nombre Producto</p>
+                            <p class="product__price">₡8888</p>
+                    </div>
+                </a>
+            </div>
+
+             6
+             <div class="product">
+                <a href="#" class="">
+                    <img class="product__image" src="img/one.svg" alt="Imagen producto">
+                    <div class="product__info">
+                            <p class="product__name">Nombre Producto</p>
+                            <p class="product__price">₡8888</p>
+                    </div>
+                </a>
+          </div>
+         -->
+          
+      </section>  
+</div><!--Fin container grid products-->
+<div class="button-leer">Ver mas</div>
+</div>
+
+<!--GRID de FOTOS-->
+<div class="horizontal-padding vertical-padding">
+  <h2 class="grid-title">Galeria de Fotos</h2>
+<div class="grid-container">
+  <div class="grid-item tall" style="background-image: url('https://picsum.photos/id/65/900/900.jpg')"></div>
+  <div class="grid-item" style="
+      background-image: url('https://picsum.photos/id/881/900/900.jpg');
+    "></div>
+
+  <div class="grid-item wide" style="
+      background-image: url('https://picsum.photos/id/248/900/900.jpg');
+    "></div>
+  <div class="grid-item" style="
+      background-image: url('https://picsum.photos/id/423/900/900.jpg');
+    "></div>
+  <div class="grid-item" style="
+      background-image: url('https://picsum.photos/id/534/900/900.jpg');
+    "></div>
+  <div class="grid-item" style="
+      background-image: url('https://picsum.photos/id/664/900/900.jpg');
+    "></div>
+  <div class="grid-item" style="
+      background-image: url('https://picsum.photos/id/176/900/900.jpg');
+    "></div>
+  <div class="grid-item" style="background-image: url('https://picsum.photos/id/73/900/900.jpg')"></div>
+  <div class="grid-item tall wide" style="
+      background-image: url('https://picsum.photos/id/806/900/900.jpg');
+    "></div>
+  <div class="grid-item" style="
+      background-image: url('https://picsum.photos/id/535/900/900.jpg');
+    "></div>
+  <div class="grid-item" style="
+      background-image: url('https://picsum.photos/id/943/900/900.jpg');
+    "></div>
+  <div class="grid-item" style="
+      background-image: url('https://picsum.photos/id/733/900/900.jpg');
+    "></div>
+  <div class="grid-item" style="
+      background-image: url('https://picsum.photos/id/584/900/900.jpg');
+    "></div>
+  <div class="grid-item" style="
+      background-image: url('https://picsum.photos/id/844/900/900.jpg');
+    "></div>
+  <div class="grid-item" style="
+      background-image: url('https://picsum.photos/id/160/900/900.jpg');
+    "></div>
+</div>
+</div>
+
+
+<footer>
+  <div class="footer">
+    <div class="top-social">
+      <div><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+      <div><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></div>
+    </div>
   </div>
+</footer>
 </main>
   </body>
 </html>

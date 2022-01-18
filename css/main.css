@@ -6,15 +6,19 @@
   --text-color: black;
   --navbar-shallow-color: #e5e5e5;
   --menu-mobile-background-color: #3A4460;
-
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lexend', sans-serif;
   background-color: var(--theme-color);
   color: var(--text-color);
   padding-top: 70px;
 }
+
 main{
   max-width: 1400px;
   margin: 0 auto;
@@ -33,6 +37,15 @@ a {
 .vertical-padding {
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+.top-social a{
+	font-size: 18px;
+	color:#fff;
+	padding: 0 5px;
+}
+.top-social a:hover{
+	color:#343434;
 }
 
 @media (min-width: 950px) {
