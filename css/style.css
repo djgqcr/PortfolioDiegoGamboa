@@ -1,0 +1,113 @@
+:root {
+    --theme-color: white;
+    --primary-color: #124f88;
+    --secundary-color: #F7C331;
+    --text-color-inverse: white;
+    --text-color: black;
+    --navbar-shallow-color: #e5e5e5;
+    --menu-mobile-background-color: #3A4460;
+    --details-icon-service: #dddddd;
+  
+  }
+  
+/* * Mis Servicios * */
+
+.content2{
+    width: 100%;
+    text-align: center;
+}
+
+.content2 h2{
+    font-weight: 100;
+    margin-top: 20px;
+    font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.content2 hr{
+    width: 100px;
+    height: 3px;
+    margin: auto;
+    border-style: none;
+    background: -webkit-linear-gradient(left, red, blue, #82B2EE);
+    background: -moz-linear-gradient(left, red, blue, #82B2EE);
+    background: -o-linear-gradient(left, red, blue, #82B2EE);
+    margin-top: 20px;
+}
+
+.content2-title{
+    
+    font-weight: bold;
+    margin: 0;
+    color: var(--text-color);
+    font-family: "Noto Sans", sans-serif;
+}
+
+.content-details{
+    width: 100%;
+}
+
+.item-details{
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.icon-details{
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.icon-details span{
+    font-size: 80px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    padding: 46px;
+    margin: auto;
+}
+
+.content-details h4{
+    font-weight: 100;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.content-details p{
+    font-size: 16px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    color: var(--text-color);
+}
+
+.button-leer{
+    width: 200px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 40px;
+    background-color: var(--primary-color);
+    color: var(--text-color-inverse);
+    font-size: 28px;
+    padding: 0.5em 1em;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+@media(min-width: 950px) {
+  .content-details{
+        display: flex;
+    }
+    
+    .content2-title{
+        font-size: 60px;
+        padding-bottom: 20px;
+    
+    }
+
+  }
